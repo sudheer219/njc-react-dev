@@ -1,0 +1,19 @@
+@import "@fontsource/roboto/400.css"; /* Regular */
+@import "@fontsource/roboto/500.css"; /* Medium */
+@import "@fontsource/roboto/700.css"; /* Bold */
+
+@import "tailwindcss";
+
+/* Offset for sticky header when using in-page anchors */
+:root {
+  scroll-padding-top: 4.5rem; /* match ~h-16 header */
+}
+
+/* Your font workaround can live here inside @layer base if you want it global */
+@layer base {
+  body {
+    font-family: 'Roboto', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    color: #111827; /* gray-900 */
+    background-color: #ffffff;
+  }
+}
