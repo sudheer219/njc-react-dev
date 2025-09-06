@@ -1,0 +1,20 @@
+.timings-section {
+  position: relative;
+  background-image: url("/images/timings-bg.jpg"); /* Place your image in public/images */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.timings-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 0;
+}
+
+.timings-section .container {
+  position: relative;
+  z-index: 1;
+}

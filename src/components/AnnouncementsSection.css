@@ -1,0 +1,15 @@
+.announcements-section {
+  background-image: url("/images/announcements-bg.jpg"); /* subtle background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.announcements-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 0;
+}

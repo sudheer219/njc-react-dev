@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+  .youtube-section {
+    background-image: none;
+    animation: bgFadeIn 1s ease forwards;
+    animation-delay: 0.3s;
+  }
+}
+
+@keyframes bgFadeIn {
+  from {
+    background-image: none;
+    opacity: 0;
+  }
+  to {
+    background-image: url('/images/ytube-bg.jpg');
+    opacity: 1;
+  }
+}
+#sermons .swiper-button-next,
+#sermons .swiper-button-prev {
+  color: #1e40af;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 9999px;
+  padding: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+#sermons .swiper-button-next:hover,
+#sermons .swiper-button-prev:hover {
+  background: #1e40af;
+  color: white;
+  transform: scale(1.1);
+}
+
+#sermons .swiper-button-next::after,
+#sermons .swiper-button-prev::after {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
