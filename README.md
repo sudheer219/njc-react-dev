@@ -1,69 +1,78 @@
-# React + TypeScript + Vite
+# New Jerusalem Church (NJC) Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the source code for the official website of **New Jerusalem Church**, built with React. This project aims to provide an online presence for NJC, featuring information about the church, its ministries, events, services, and resources for members and visitors.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern React Architecture**: Built using React functional components and hooks for a responsive, dynamic experience.
+- **Homepage**: Engaging, informative homepage highlighting church mission, service times, and recent updates.
+- **Events & Ministries**: Sections to showcase upcoming events, ministry details, and opportunities for involvement.
+- **Contact & Visit Info**: Easy-to-find contact details, service times, and directions.
+- **Photo Gallery**: Visual highlights from church activities and events.
+- **Announcements**: Latest news and updates from church leadership.
+- **Responsive Design**: Optimized for mobile and desktop.
+- **Easy Customization**: Modular structure for adding new features and content.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- [Node.js](https://nodejs.org/) (v16+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/sudheer219/njc-react-dev.git
+cd njc-react-dev
+git checkout features-homepage
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Local Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Visit [http://localhost:5173](http://localhost:5173) to view your local copy.
+
+### Production Build
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+njc-react-dev/
+├── public/               # Static assets
+├── src/
+│   ├── components/       # Reusable UI components (navbar, footer, cards, etc.)
+│   ├── features/         # Individual feature modules (homepage, events, ministries)
+│   ├── pages/            # Main site pages
+│   ├── services/         # API calls, data fetching
+│   └── App.jsx / main.jsx
+├── .eslintrc.js
+├── vite.config.js
+└── package.json
+```
+
+## Contributing
+
+We welcome contributions from church members, web developers, and the open source community.  
+Feel free to open [issues](https://github.com/sudheer219/njc-react-dev/issues) or submit pull requests.
+
+## License
+
+[MIT](LICENSE)
+
+## About
+
+Website for **New Jerusalem Church**  
+Developed & maintained by [sudheer219](https://github.com/sudheer219)
+
+---
+
+> For latest features and homepage updates, see the [`features-homepage` branch](https://github.com/sudheer219/njc-react-dev/tree/features-homepage).
