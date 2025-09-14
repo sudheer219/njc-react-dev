@@ -16,7 +16,7 @@ export default function NavBar() {
     { name: "Contact", path: "/contact" },
   ];
 
-  const linkClasses = ({ isActive }) =>
+  const linkClasses = ({ isActive }: { isActive: boolean }) =>
     `block text-lg font-medium transition-colors duration-300 ${
       isActive
         ? "text-primary border-b-2 border-primary"

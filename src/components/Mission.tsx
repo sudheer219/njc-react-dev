@@ -1,4 +1,3 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
@@ -13,7 +12,7 @@ const missions = [
 ];
 
 // Tailwind-safe color classes
-const colorMap = {
+const colorMap: { [key: string]: { gradient: string; header: string; hover: string } } = {
   blue: {
     gradient: "from-blue-900 to-blue-700",
     header: "bg-blue-900",

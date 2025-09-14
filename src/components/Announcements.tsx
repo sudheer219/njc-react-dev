@@ -12,7 +12,7 @@ import { CalendarDaysIcon, ClockIcon } from "@heroicons/react/16/solid";
 
 export default function AnnouncementsSection() {
 
-  function formatDate(date) {
+  function formatDate(date: string) {
   // If it's not a real date (like "Every Wednesday"), just return it
   if (isNaN(new Date(date).getTime())) return date;
   return new Date(date).toLocaleDateString("en-US", {
@@ -56,7 +56,7 @@ export default function AnnouncementsSection() {
 
 
   return (
-    <section className="py-16 bg-gradient-to-r from-pink-50 via-purple-50 via-blue-50 to-green-50 text-gray-900">
+  <section className="py-16 bg-gradient-to-r from-pink-50 via-purple-50 to-green-50 text-gray-900">
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
           Important Announcements

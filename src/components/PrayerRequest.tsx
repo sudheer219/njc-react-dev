@@ -1,4 +1,3 @@
-import React from "react";
 
 const PrayerRequest = () => {
   return (
@@ -65,7 +64,7 @@ Our prayer team and leadership regularly pray for our community.
                 Prayer Request
               </label>
               <textarea
-                rows="4"
+                rows={4}
                 className="w-full px-4 py-2 rounded-lg bg-black/40 border border-white/30 text-white placeholder-amber-200 focus:outline-none focus:ring-2 focus:ring-pink-500"
                 placeholder="Write your prayer request here..."
               ></textarea>

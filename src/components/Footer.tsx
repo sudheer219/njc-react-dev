@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faYoutube, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 export default function FooterContact() {
   return (
