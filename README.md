@@ -6,7 +6,7 @@ Welcome to the source code for the official website of **New Jerusalem Church**,
 
 - **Modern React Architecture**: Built using React functional components and hooks for a responsive, dynamic experience.
 - **Homepage**: Engaging, informative homepage highlighting church mission, service times, and recent updates.
-- **Events & Ministries**: Sections to showcase upcoming events, ministry details, and opportunities for involvement.
+- **Events & Ministries**: Sections  to showcase upcoming events, ministry details, and opportunities for involvement.
 - **Contact & Visit Info**: Easy-to-find contact details, service times, and directions.
 - **Photo Gallery**: Visual highlights from church activities and events.
 - **Announcements**: Latest news and updates from church leadership.
