@@ -79,13 +79,13 @@ export default function YouTubeSection() {
     <section
       className="
     youtube-section 
-    bg-[#ea004d] py-6 
+    bg-[#ea004d] py-4 
     bg-none md:bg-[url('/images/ytube-bg.jpg')] 
     bg-no-repeat bg-right bg-contain 
     transition-[background-image] duration-700 ease-in-out
   "
     >
-      <div className="container mx-auto flex flex-col md:flex-row items-center md:justify-between gap-6 md:gap-0">
+      <div className="container mx-auto flex flex-col md:flex-row items-center md:justify-between gap-4 md:gap-0">
         {/* Left: Profile */}
         <div
           className={`flex items-center text-white transition-all duration-700 ease-out ${
@@ -113,7 +113,7 @@ export default function YouTubeSection() {
 
         {/* Right: Stats */}
         <div
-          className={`flex md:mr-40 flex-wrap justify-center md:justify-around gap-6 transition-all duration-700 ease-out delay-200 ${
+          className={`flex md:mr-40 flex-wrap justify-center md:justify-around gap-3 transition-all duration-700 ease-out delay-200 ${
             loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
@@ -159,7 +159,7 @@ function Stat({
   delay?: number; // optional stagger delay in ms
 }) {
   return (
-    <p className="text-white text-center flex flex-col p-5 w-40">
+    <p className="text-white text-center flex flex-col py-3 w-40">
       {/* Bigger, bolder number */}
       <span className="font-extrabold text-3xl md:text-5xl leading-tight">
         {value}
