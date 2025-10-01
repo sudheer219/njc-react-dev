@@ -89,7 +89,7 @@ export default function HeroCarousel() {
     {`
       @media (min-width: 1024px) {
        .hero-inline {
-          height: calc(100vh - 244px);
+          height: calc(100vh - 190px)
         }
       }
     `}
