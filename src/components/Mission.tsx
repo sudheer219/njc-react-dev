@@ -3,12 +3,12 @@ import "swiper/css";
 
 // Data
 const missions = [
-  { title: "Sunday School", img: "images/mission-img-1.png", color: "blue" },
-  { title: "Youth Ministry", img: "images/mission-img-2.png", color: "pink" },
-  { title: "Women's Ministry", img: "images/mission-img-3.png", color: "yellow" },
-  { title: "Cottage Ministry", img: "images/mission-img-4.png", color: "green" },
-  { title: "Outreach Ministry", img: "images/mission-img-5.png", color: "purple" },
-  { title: "Crusade Ministry", img: "images/mission-img-6.png", color: "red" },
+  { title: "Sunday School", img: "images/sunday-school.jpg", color: "blue" },
+  { title: "Youth Ministry", img: "images/youth-ministry.jpg", color: "pink" },
+  { title: "Women's Ministry", img: "images/women-ministry.jpg", color: "yellow" },
+  { title: "Cottage Ministry", img: "images/cottage-ministry.jpg", color: "green" },
+  { title: "Outreach Ministry", img: "images/outreach-ministry.webp", color: "purple" },
+  { title: "Crusade Ministry", img: "images/crusade-ministry.png", color: "red" },
 ];
 
 // Tailwind-safe color classes
