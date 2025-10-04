@@ -28,28 +28,28 @@ export default function AnnouncementsSection() {
     id: 1,
     title: "Youth Fasting & Prayer",
     img: "/images/events-1.jpg",
-    date: "Starts on 2025-09-25",
-    time: "10:00 AM – 05:00 PM"
+    date: "Every Saturday (Weekly)",
+    time: "06:00 PM – 07:30 PM"
   },
   {
     id: 2,
     title: "Intercession Prayer Meeting",
     img: "/images/events-3.jpg",
-    date: "2025-09-27",
+    date: "Every Friday (Weekly)",
     time: "07:00 PM – 08:15 PM"
   },
   {
     id: 3,
-    title: "Women's Fellowship",
+    title: "Sunday School For Kids",
     img: "/images/events-4.jpg",
-    date: "2025-10-26",
+    date: "Every Sunday (Weekly)",
     time: "10:00 AM – 01:00 PM"
   },
   {
     id: 4,
     title: "Half-Night Service",
     img: "/images/events-2.jpg",
-    date: "2025-09-30",
+    date: "Every Last Day of the Month",
     time: "10:00 PM – 01:00 AM"
   }
 ];
