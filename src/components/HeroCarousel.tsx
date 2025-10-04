@@ -50,7 +50,7 @@ export default function HeroCarousel() {
           // For slides 2 and 3: justify-start (left), items-center (vertical middle)
           const justifyClass = isLeft ? "justify-start items-center" : "justify-center items-center";
           // Add left padding for slides 2 and 3
-          const leftPadClass = isLeft ? "pl-4 md:pl-8" : "";
+          const leftPadClass = isLeft ? "pl-4 md:pl-8" : "pl-4";
           return (
             <SwiperSlide key={slide.id}>
               <div
