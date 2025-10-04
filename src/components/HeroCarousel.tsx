@@ -45,12 +45,11 @@ export default function HeroCarousel() {
       >
         {slides.map((slide) => {
           // Use left alignment for slides 2 and 3, center for others
-          const isLeft = slide.id === 2 || slide.id === 3;
-          const textAlignClass = isLeft ? "text-left" : "text-center";
+          const textAlignClass = "text-center";
           // For slides 2 and 3: justify-start (left), items-center (vertical middle)
-          const justifyClass = isLeft ? "justify-start items-center" : "justify-center items-center";
+          const justifyClass = "justify-center items-center";
           // Add left padding for slides 2 and 3
-          const leftPadClass = isLeft ? "ml-8 md:ml-32" : "ml-2";
+          const leftPadClass = "ml-8 md:ml-32";
           return (
             <SwiperSlide key={slide.id}>
               <div
