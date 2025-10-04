@@ -47,7 +47,7 @@ export default function HeroCarousel() {
           // Use left alignment for slides 2 and 3, center for others
           const textAlignClass = "text-center";
           // For slides 2 and 3: justify-start (left), items-center (vertical middle)
-          const justifyClass = "justify-center items-center";
+          const justifyClass = "items-center";
           // Add left padding for slides 2 and 3
           const leftPadClass = "ml-8 md:ml-32";
           return (
