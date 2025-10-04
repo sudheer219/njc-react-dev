@@ -51,7 +51,7 @@ export default function HeroCarousel() {
           if (slide.id === 1) {
             justifyClass = "justify-end items-center";
             alignClass = "text-center";
-            sidePadClass = "mr-8 md:mr-32";
+            sidePadClass = "mr-10 md:mr-42";
           } else {
             justifyClass = "justify-start items-center";
             alignClass = "text-center";
