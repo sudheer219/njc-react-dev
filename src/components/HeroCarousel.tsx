@@ -45,18 +45,9 @@ export default function HeroCarousel() {
       >
         {slides.map((slide) => {
           // 1st slide: right side, right-aligned text; 2 & 3: left side, center-aligned text
-          let justifyClass = "items-center";
+          let justifyClass = "justify-start items-center";
           let alignClass = "text-center";
-          let sidePadClass = "";
-          if (slide.id === 1) {
-            justifyClass = "justify-end items-center";
-            alignClass = "text-center";
-            sidePadClass = "mr-10 md:mr-42";
-          } else {
-            justifyClass = "justify-start items-center";
-            alignClass = "text-center";
-            sidePadClass = "ml-8 md:ml-32";
-          }
+          let sidePadClass = "ml-8 md:ml-32";          
           return (
             <SwiperSlide key={slide.id}>
               <div
