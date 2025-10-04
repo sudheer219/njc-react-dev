@@ -11,25 +11,25 @@ export default function HeroCarousel() {
   const slides = [
     {
       id: 1,
-      title: "Welcome to Our Church",
+      title: "Welcome to New Jerusalem Church",
       subtitle:
         "Then you will shine among them like stars in the sky as you hold firmly to the word of life. - Philippians 2:15-16",
       image: "/images/hero-bg.jpg",
-      cta: { text: "Watch Live", link: "/about" },
+      cta: { text: "Watch Live", link: "https://www.youtube.com/@pastorvinaykumarnjc" },
     },
     {
       id: 2,
-      title: "Sunday Services",
-      subtitle: "Every Sunday at 10 AM & 6 PM",
+      title: "Psalms, Hymns, and Spiritual Songs",
+      subtitle: "Praise Him with Songs and Hymns -  Psalm 150",
       image: "/images/hero-bg-2.jpg",
-      cta: { text: "Plan Your Visit", link: "/contact" },
+      cta: { text: "Join Our Worship", link: "https://www.youtube.com/@pastorvinaykumarnjc" },
     },
     {
       id: 3,
-      title: "Bible Study Groups",
-      subtitle: "Deepen your understanding of God’s Word",
+      title: "Spreading the gospel of Jesus Christ ",
+      subtitle: "'Go into all the world and preach the gospel to all creation' - Mark 16:15.",
       image: "/images/hero-bg-3.jpg",
-      cta: { text: "Find a Group", link: "/bible-study" },
+      cta: { text: "Watch Now", link: "https://www.youtube.com/@pastorvinaykumarnjc" },
     },
   ];
 
