@@ -14,21 +14,21 @@ export default function HeroCarousel() {
       title: "Welcome to New Jerusalem Church",
       subtitle:
         "Then you will shine among them like stars in the sky as you hold firmly to the word of life. - Philippians 2:15-16",
-      image: "/images/hero-bg.jpg",
+      image: "/images/hero-bg-2.jpg",
       cta: { text: "Watch Live", link: "https://www.youtube.com/@pastorvinaykumarnjc" },
     },
     {
       id: 2,
       title: "Psalms, Hymns, and Spiritual Songs",
       subtitle: "Praise Him with Songs and Hymns -  Psalm 150",
-      image: "/images/hero-bg-2.jpg",
+      image: "/images/hero-bg-.jpg",
       cta: { text: "Join Our Worship", link: "https://www.youtube.com/@pastorvinaykumarnjc" },
     },
     {
       id: 3,
       title: "Spreading the gospel of Jesus Christ ",
       subtitle: "'Go into all the world and preach the gospel to all creation' - Mark 16:15.",
-      image: "/images/hero-bg-3.jpg",
+      image: "/images/hero-bg.jpg",
       cta: { text: "Watch Now", link: "https://www.youtube.com/@pastorvinaykumarnjc" },
     },
   ];
@@ -48,15 +48,7 @@ export default function HeroCarousel() {
           let justifyClass = "justify-start items-center";
           let alignClass = "text-center";
           let sidePadClass = "ml-8 md:ml-32";
-          if (slide.id === 1) {
-            justifyClass = "justify-start items-center";
-            alignClass = "text-center";
-            sidePadClass = "mr-10 md:mr-42";
-          } else {
-            justifyClass = "justify-start items-center";
-            alignClass = "text-center";
-            sidePadClass = "ml-8 md:ml-32";
-          }
+          
           return (
             <SwiperSlide key={slide.id}>
               <div
