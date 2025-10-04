@@ -43,57 +43,61 @@ export default function HeroCarousel() {
         loop
         className="h-full"
       >
-        {slides.map((slide) => (
-          <SwiperSlide key={slide.id}>
-            <div
-              className="w-full h-full bg-center bg-cover flex items-center justify-center"
-              style={{ backgroundImage: `url(${slide.image})` }}
-            >
-              <div className="bg-black/50 text-center p-6 rounded-lg max-w-xl">
-                <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
-                  {slide.title}
-                </h2>
-                <p className="text-lg md:text-xl text-gray-200 mb-6">
-                  {slide.subtitle}
-                </p>
-                <Link
-                  to={slide.cta.link}
-                  className="group inline-flex items-center gap-2 rounded-full bg-rose-600 px-5 py-3 text-white shadow-md transition-colors duration-200 hover:bg-fuchsia-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fuchsia-500"
-                >
-                  <span className="text-sm md:text-base font-semibold">
-                    {slide.cta.text}
-                  </span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-0.5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    aria-hidden="true"
+        {slides.map((slide) => {
+          // Use left alignment for slides 2 and 3, center for others
+          const textAlignClass = slide.id === 2 || slide.id === 3 ? "text-left" : "text-center";
+          return (
+            <SwiperSlide key={slide.id}>
+              <div
+                className="w-full h-full bg-center bg-cover flex items-center justify-center"
+                style={{ backgroundImage: `url(${slide.image})` }}
+              >
+                <div className={`bg-black/50 ${textAlignClass} p-6 rounded-lg max-w-xl`}>
+                  <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
+                    {slide.title}
+                  </h2>
+                  <p className="text-lg md:text-xl text-gray-200 mb-6">
+                    {slide.subtitle}
+                  </p>
+                  <Link
+                    to={slide.cta.link}
+                    className="group inline-flex items-center gap-2 rounded-full bg-rose-600 px-5 py-3 text-white shadow-md transition-colors duration-200 hover:bg-fuchsia-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fuchsia-500"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </Link>
+                    <span className="text-sm md:text-base font-semibold">
+                      {slide.cta.text}
+                    </span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-0.5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      aria-hidden="true"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </Link>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
 
       <style>
-    {`
-      @media (min-width: 1024px) {
-       .hero-inline {
-          height: calc(100vh - 190px)
-        }
-      }
-    `}
-  </style>
+        {`
+          @media (min-width: 1024px) {
+            .hero-inline {
+              height: calc(100vh - 190px)
+            }
+          }
+        `}
+      </style>
 
     </div>
   );
