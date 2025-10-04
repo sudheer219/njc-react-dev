@@ -26,31 +26,31 @@ export default function AnnouncementsSection() {
   const announcements = [
   {
     id: 1,
-    title: "Bible Study Service",
+    title: "Youth Fasting & Prayer",
     img: "/images/events-1.jpg",
-    date: "2025-03-15",
-    time: "09:00 AM – 05:00 PM"
+    date: "Starts on 2025-09-25",
+    time: "10:00 AM – 05:00 PM"
   },
   {
     id: 2,
-    title: "Fasting & Prayer Meeting",
-    img: "/images/events-2.jpg",
-    date: "2025-12-25",
-    time: "06:00 PM – 08:00 PM"
+    title: "Intercession Prayer Meeting",
+    img: "/images/events-3.jpg",
+    date: "2025-09-27",
+    time: "07:00 PM – 08:15 PM"
   },
   {
     id: 3,
-    title: "Half-Night Service",
-    img: "/images/events-3.jpg",
-    date: "2025-10-12",
+    title: "Women's Fellowship",
+    img: "/images/events-4.jpg",
+    date: "2025-10-26",
     time: "10:00 AM – 01:00 PM"
   },
   {
     id: 4,
-    title: "Bible Study Series",
-    img: "/images/events-4.jpg",
-    date: "Every Wednesday",
-    time: "07:00 PM – 08:30 PM"
+    title: "Half-Night Service",
+    img: "/images/events-2.jpg",
+    date: "2025-09-30",
+    time: "10:00 PM – 01:00 AM"
   }
 ];
 
@@ -92,9 +92,9 @@ export default function AnnouncementsSection() {
       alt={item.title}
       className="w-full h-48 object-cover"
     />
-    <div className="p-4 space-y-2">
+    <div className="p-2 space-y-2">
       <h3 className="text-lg font-semibold">{item.title}</h3>
-      <div className="flex items-center text-sm text-gray-600">
+      <div className="flex items-center text-sm text-gray-600 pb-4">
         <CalendarDaysIcon className="w-4 h-4 mr-1 text-indigo-500" />
         {formatDate(item.date)}
         <span className="mx-2">·</span>

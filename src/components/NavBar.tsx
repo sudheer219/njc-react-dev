@@ -9,10 +9,10 @@ export default function NavBar() {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Sermons", path: "/sermons" },
-    { name: "Topics", path: "/topics" },
-    { name: "Bible Study", path: "/bible-study" },
+    // { name: "Topics", path: "/topics" },
+    // { name: "Bible Study", path: "/bible-study" },
     { name: "About Us", path: "/about" },
-    { name: "Contribute", path: "/contribute" },
+    // { name: "Contribute", path: "/contribute" },
     { name: "Contact", path: "/contact" },
   ];
 
