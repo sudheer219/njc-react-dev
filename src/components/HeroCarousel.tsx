@@ -37,7 +37,7 @@ export default function HeroCarousel() {
     <div className="hero-inline relative w-full h-[80vh]">
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
-        autoplay={{ delay: 15000, disableOnInteraction: false }}
+        autoplay={{ delay: 150000, disableOnInteraction: true }}
         pagination={{ clickable: true }}
         navigation
         loop
