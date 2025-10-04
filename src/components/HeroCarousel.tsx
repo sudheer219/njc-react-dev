@@ -8,28 +8,15 @@ import "swiper/css/navigation";
 import { Link } from "react-router-dom";
 
 export default function HeroCarousel() {
+  // Replace images with YouTube video IDs for each slide
   const slides = [
     {
       id: 1,
       title: "Welcome to New Jerusalem Church",
       subtitle:
         "Then you will shine among them like stars in the sky as you hold firmly to the word of life. - Philippians 2:15-16",
-      image: "/images/hero-bg.jpg",
+      videoId: "Ugkxst4jACXliKjvroeUN2ZTg34hNgqoDspv",
       cta: { text: "Watch Live", link: "https://www.youtube.com/@pastorvinaykumarnjc" },
-    },
-    {
-      id: 2,
-      title: "Psalms, Hymns, and Spiritual Songs",
-      subtitle: "Praise Him with Songs and Hymns -  Psalm 150",
-      image: "/images/hero-bg-2.jpg",
-      cta: { text: "Join Our Worship", link: "https://www.youtube.com/@pastorvinaykumarnjc" },
-    },
-    {
-      id: 3,
-      title: "Spreading the gospel of Jesus Christ ",
-      subtitle: "'Go into all the world and preach the gospel to all creation' - Mark 16:15.",
-      image: "/images/hero-bg-3.jpg",
-      cta: { text: "Watch Now", link: "https://www.youtube.com/@pastorvinaykumarnjc" },
     },
   ];
 
@@ -54,10 +41,19 @@ export default function HeroCarousel() {
           return (
             <SwiperSlide key={slide.id}>
               <div
-                className={`w-full h-full bg-center bg-cover flex ${justifyClass}`}
-                style={{ backgroundImage: `url(${slide.image})` }}
+                className={`w-full h-full flex ${justifyClass} relative bg-black`}
               >
-                <div className={`bg-black/50 ${textAlignClass} ${leftPadClass} p-6 rounded-lg max-w-xl w-full md:w-auto`}>
+                {/* YouTube video background */}
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full object-cover z-0"
+                  src={`https://www.youtube.com/embed/${slide.videoId}?autoplay=1&mute=1&loop=1&playlist=${slide.videoId}`}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  style={{ pointerEvents: 'none' }}
+                ></iframe>
+                <div className={`relative z-10 bg-black/50 ${textAlignClass} ${leftPadClass} p-6 rounded-lg max-w-xl w-full md:w-auto`}>
                   <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
                     {slide.title}
                   </h2>
