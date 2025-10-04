@@ -44,19 +44,26 @@ export default function HeroCarousel() {
         className="h-full"
       >
         {slides.map((slide) => {
-          // Use left alignment for slides 2 and 3, center for others
-          const textAlignClass = "text-center";
-          // For slides 2 and 3: justify-start (left), items-center (vertical middle)
-          const justifyClass = "items-center";
-          // Add left padding for slides 2 and 3
-          const leftPadClass = "ml-8 md:ml-32";
+          // 1st slide: right side, right-aligned text; 2 & 3: left side, center-aligned text
+          let justifyClass = "items-center";
+          let alignClass = "text-center";
+          let sidePadClass = "";
+          if (slide.id === 1) {
+            justifyClass = "justify-end items-center";
+            alignClass = "text-right";
+            sidePadClass = "mr-8 md:mr-32";
+          } else {
+            justifyClass = "justify-start items-center";
+            alignClass = "text-center";
+            sidePadClass = "ml-8 md:ml-32";
+          }
           return (
             <SwiperSlide key={slide.id}>
               <div
                 className={`w-full h-full bg-cover flex ${justifyClass}`}
                 style={{ backgroundImage: `url(${slide.image})`, backgroundPosition: '30% 0' }}
               >
-                <div className={`bg-black/50 ${textAlignClass} ${leftPadClass} p-6 rounded-lg max-w-xl w-full md:w-auto`}>
+                <div className={`bg-black/50 ${alignClass} ${sidePadClass} p-6 rounded-lg max-w-xl w-full md:w-auto`}>
                   <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
                     {slide.title}
                   </h2>
