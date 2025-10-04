@@ -21,7 +21,7 @@ export default function HeroCarousel() {
       id: 2,
       title: "Psalms, Hymns, and Spiritual Songs",
       subtitle: "Praise Him with Songs and Hymns -  Psalm 150",
-      image: "/images/hero-bg-.jpg",
+      image: "/images/hero-bg-3.jpg",
       cta: { text: "Join Our Worship", link: "https://www.youtube.com/@pastorvinaykumarnjc" },
     },
     {
