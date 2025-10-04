@@ -45,14 +45,16 @@ export default function HeroCarousel() {
       >
         {slides.map((slide) => {
           // Use left alignment for slides 2 and 3, center for others
-          const textAlignClass = slide.id === 2 || slide.id === 3 ? "text-left" : "text-center";
+          const isLeft = slide.id === 2 || slide.id === 3;
+          const textAlignClass = isLeft ? "text-left" : "text-center";
+          const justifyClass = isLeft ? "justify-start items-start" : "justify-center items-center";
           return (
             <SwiperSlide key={slide.id}>
               <div
-                className="w-full h-full bg-center bg-cover flex items-center justify-center"
+                className={`w-full h-full bg-center bg-cover flex ${justifyClass}`}
                 style={{ backgroundImage: `url(${slide.image})` }}
               >
-                <div className={`bg-black/50 ${textAlignClass} p-6 rounded-lg max-w-xl`}>
+                <div className={`bg-black/50 ${textAlignClass} p-6 rounded-lg max-w-xl w-full md:w-auto`}>
                   <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
                     {slide.title}
                   </h2>
