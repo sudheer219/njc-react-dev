@@ -65,7 +65,7 @@ export default function MissionSection() {
                 <div className={`rounded-lg overflow-hidden shadow-lg bg-gradient-to-br ${colors.gradient}`}>
                   {/* Header */}
                   <div className={`py-3 ${colors.header} text-white text-center`}>
-                    <h3 className="text-xs font-semibold">{m.title}</h3>
+                    <h3 className="text-md font-semibold">{m.title}</h3>
                   </div>
 
                   {/* Image + dark fade + CTA */}

@@ -14,7 +14,7 @@ const PrayerRequest = () => {
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10">
         
         {/* Left: Scripture / Invitation */}
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col mt-3">
           <h2 className="text-white text-4xl md:text-5xl font-bold mb-6">
             Need a Prayer?
           </h2>
