@@ -37,7 +37,7 @@ export default function HeroCarousel() {
     <div className="hero-inline relative w-full h-[80vh]">
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
-        autoplay={{ delay: 150000, disableOnInteraction: true }}
+        autoplay={{ delay: 15000, disableOnInteraction: true }}
         pagination={{ clickable: true }}
         navigation
         loop
@@ -53,8 +53,8 @@ export default function HeroCarousel() {
           return (
             <SwiperSlide key={slide.id}>
               <div
-                className={`w-full h-full bg-center bg-cover flex ${justifyClass}`}
-                style={{ backgroundImage: `url(${slide.image})` }}
+                className={`w-full h-full bg-cover flex ${justifyClass}`}
+                style={{ backgroundImage: `url(${slide.image})`, backgroundPosition: '30% 0' }}
               >
                 <div className={`bg-black/50 ${textAlignClass} ${leftPadClass} p-6 rounded-lg max-w-xl w-full md:w-auto`}>
                   <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
