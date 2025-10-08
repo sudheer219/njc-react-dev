@@ -48,6 +48,57 @@ export default function FooterContact() {
           </ul>
         </div>
 
+        {/* Service Timings */}
+        <div>
+          <h4 className="text-lg font-semibold mb-4">Service Timings</h4>
+          <ul className="space-y-2 text-sm text-gray-300">
+            <li className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 py-2 border-b border-white/10 last:border-b-0">
+              <div className="flex items-center gap-2 mb-1 md:mb-0">
+                <span className="inline-flex items-center px-2 py-1 rounded bg-indigo-600 text-white text-xs font-semibold">
+                  1st
+                </span>
+                <span className="font-medium">Sunday Worship (Telugu)</span>
+              </div>
+              <span className="px-2 py-1 rounded bg-indigo-100 text-indigo-700 text-xs font-semibold flex items-center gap-1 w-fit">
+                06:00 AM - 08:00 AM
+              </span>
+            </li>
+            <li className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 py-2 border-b border-white/10 last:border-b-0">
+              <div className="flex items-center gap-2 mb-1 md:mb-0">
+                <span className="inline-flex items-center px-2 py-1 rounded bg-green-600 text-white text-xs font-semibold">
+                  2nd
+                </span>
+                <span className="font-medium">Sunday Worship (Telugu)</span>
+              </div>
+              <span className="px-2 py-1 rounded bg-green-100 text-green-700 text-xs font-semibold flex items-center gap-1 w-fit">
+                08:30 AM - 10:30 AM
+              </span>
+            </li>
+            <li className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 py-2 border-b border-white/10 last:border-b-0">
+              <div className="flex items-center gap-2 mb-1 md:mb-0">
+                <span className="inline-flex items-center px-2 py-1 rounded bg-orange-500 text-white text-xs font-semibold">
+                  3rd
+                </span>
+                <span className="font-medium">Sunday Worship (Telugu)</span>
+              </div>
+              <span className="px-2 py-1 rounded bg-orange-100 text-orange-700 text-xs font-semibold flex items-center gap-1 w-fit">
+                11:00 AM - 01:00 PM
+              </span>
+            </li>
+            <li className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 py-2">
+              <div className="flex items-center gap-2 mb-1 md:mb-0">
+                <span className="inline-flex items-center px-2 py-1 rounded bg-purple-600 text-white text-xs font-semibold">
+                  4th
+                </span>
+                <span className="font-medium">Sunday Worship (Hindi - Telugu)</span>
+              </div>
+              <span className="px-2 py-1 rounded bg-purple-100 text-purple-700 text-xs font-semibold flex items-center gap-1 w-fit">
+                07:00 PM - 09:00 PM
+              </span>
+            </li>
+          </ul>
+        </div>
+
         {/* Map Thumbnail */}
         
       </div>
