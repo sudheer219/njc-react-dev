@@ -26,31 +26,31 @@ export default function AnnouncementsSection() {
   const announcements = [
   {
     id: 1,
-    title: "Youth Fasting & Prayer",
+    title: "Youth Meeting",
     img: "/images/events-1.jpg",
-    date: "Every Saturday (Weekly)",
-    time: "06:00 PM – 07:30 PM"
+    date: "Every Saturday",
+    time: "6:30 - 8:00 PM"
   },
   {
     id: 2,
     title: "Intercession Prayer Meeting",
     img: "/images/events-3.jpg",
-    date: "Every Friday (Weekly)",
-    time: "07:00 PM – 08:15 PM"
+    date: "Every Friday",
+    time: "07:00 – 08:15 PM"
   },
   {
     id: 3,
-    title: "Sunday School For Kids",
+    title: "Sunday School",
     img: "/images/events-4.jpg",
-    date: "Every Sunday (Weekly)",
-    time: "10:00 AM – 01:00 PM"
+    date: "Every Sunday",
+    time: "8:30 - 10:30 AM; 11:00 AM - 1:00 PM; 7:00 - 9:00 PM"
   },
   {
     id: 4,
     title: "Half-Night Service",
     img: "/images/events-2.jpg",
     date: "Every Last Day of the Month",
-    time: "10:00 PM – 01:00 AM"
+    time: "10:00 – 01:00 AM"
   }
 ];
 
