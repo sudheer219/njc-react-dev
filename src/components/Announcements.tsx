@@ -92,16 +92,18 @@ export default function AnnouncementsSection() {
       alt={item.title}
       className="w-full h-48 object-cover"
     />
-    <div className="p-2 space-y-2">
+    <div className="p-2 pb-0 space-y-2">
       <h3 className="text-lg font-semibold">{item.title}</h3>
-      <div className="flex items-center text-sm text-gray-600 pb-4">
-        <CalendarDaysIcon className="w-4 h-4 mr-1 text-indigo-500" />
-        {formatDate(item.date)}
-        <span className="mx-2">·</span>
-        <ClockIcon className="w-4 h-4 mr-1 text-indigo-500" />
-        {item.time}
+      <div className="flex flex-col text-sm text-gray-600 pb-4">
+        <div className="flex">
+          <CalendarDaysIcon className="w-4 h-4 mr-1 text-indigo-500" />
+          {formatDate(item.date)}
+        </div>
+        <div className="flex">
+          <ClockIcon className="w-4 h-4 mr-1 text-indigo-500" />
+          {item.time}
+        </div>
       </div>
-
     </div>
   </div>
 </SwiperSlide>
