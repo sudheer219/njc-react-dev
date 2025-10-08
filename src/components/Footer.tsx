@@ -20,8 +20,8 @@ export default function FooterContact() {
           <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
           <ul className="space-y-2 text-sm text-gray-300">
             <li>
-              <a href="tel:+919876543210" className="hover:text-pink-300 transition flex items-center gap-2">
-                📞 +91 98765 43210
+              <a href="tel:+919908522380" className="hover:text-pink-300 transition flex items-center gap-2">
+                📞 +91 99085 22380
               </a>
             </li>
             <li>
@@ -30,7 +30,7 @@ export default function FooterContact() {
               </a>
             </li>
             <li>
-              <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="hover:text-pink-300 transition flex items-center gap-2">
+              <a href="https://wa.me/919908522380" target="_blank" rel="noopener noreferrer" className="hover:text-pink-300 transition flex items-center gap-2">
                 <FontAwesomeIcon icon={faWhatsapp} /> WhatsApp Us
               </a>
             </li>
@@ -55,9 +55,9 @@ export default function FooterContact() {
       {/* Social Icons */}
       <div className="mt-10 flex justify-center gap-6">
         {[
-          { icon: faFacebook, link: "https://facebook.com", label: "Facebook" },
-          { icon: faYoutube, link: "https://youtube.com", label: "YouTube" },
-          { icon: faInstagram, link: "https://instagram.com", label: "Instagram" },
+          { icon: faFacebook, link: "https://www.facebook.com/Vinaykumar12.1979", label: "Facebook" },
+          { icon: faYoutube, link: "https://www.youtube.com/@pastorvinaykumarnjc", label: "YouTube" },
+          { icon: faInstagram, link: "https://www.instagram.com/pastorvinaykumar", label: "Instagram" },
         ].map((social, idx) => (
           <a
             key={idx}

@@ -11,6 +11,8 @@ import MissionSection from "./components/Mission";
 import PrayerRequestSection from "./components/PrayerRequest";
 import LocationSection from "./components/Location";
 import FooterContact from "./components/Footer";
+import About from "./pages/About";
+import Sermons from "./pages/Sermons";
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
                 </>
               }
             />
+            <Route path="/sermons" element={<Sermons />} />
+            <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
